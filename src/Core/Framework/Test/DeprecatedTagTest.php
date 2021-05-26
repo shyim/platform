@@ -143,7 +143,7 @@ class DeprecatedTagTest extends TestCase
         if (\is_string($envVersion) && $envVersion !== '') {
             return $envVersion;
         }
-        $tags = $this->exec('git tag');
+        $tags = $this->exec('git -C ' . escapeshellarg(__DIR__). ' tag');
 
         $tags = array_filter(array_map(static function ($tag): ?string {
             if (\strlen($tag) > 8) {
