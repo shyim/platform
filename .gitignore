@@ -102,6 +102,7 @@ src/Core/Framework/Test/Plugin/_fixture/SwagFashionTheme.zip
 .gitkeep
 config/jwt/
 custom
+files/*
 install.lock
 docker-compose.override.yaml
 
